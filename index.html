@@ -471,6 +471,12 @@
       line-height: 1.75;
     }
 
+    #best.section,
+    #arrival.section {
+      margin: 0 40px;
+      padding: 120px 0 0;
+    }
+
     .more-link {
       width: max-content;
       border-bottom: 1px solid currentColor;
@@ -484,8 +490,7 @@
     .product-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      column-gap: var(--gap);
-      row-gap: clamp(54px, 4.4vw, 82px);
+      gap: 16px;
       max-width: none;
       margin: 0;
     }
@@ -568,7 +573,7 @@
     }
 
     .product-info {
-      padding-top: 15px;
+      padding: 16px 0 30px;
       font-family: "Noto Sans KR", sans-serif;
       font-size: 12px;
       line-height: 1.55;
@@ -601,16 +606,16 @@
     .more-center {
       display: flex;
       justify-content: center;
-      padding-top: clamp(46px, 5.6vw, 74px);
+      padding-top: 60px;
     }
 
     .split-banners {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: var(--gap);
+      gap: 15px;
       max-width: none;
       margin: 0;
-      padding: 0 clamp(18px, 1.8vw, 36px);
+      padding: 120px 40px 0;
     }
 
     .split-banner {
@@ -656,7 +661,7 @@
       max-width: none;
       overflow-x: auto;
       overscroll-behavior-x: contain;
-      padding: 0 clamp(16px, 2vw, 28px) 8px;
+      padding: 0 0 50px;
       scrollbar-width: thin;
     }
 
@@ -664,7 +669,7 @@
       display: grid;
       grid-auto-flow: column;
       grid-auto-columns: minmax(260px, 23vw);
-      gap: var(--gap);
+      gap: 16px;
       min-width: min-content;
     }
 
@@ -921,22 +926,43 @@
         padding: 74px 14px;
       }
 
+      #best.section,
+      #arrival.section {
+        margin: 0 16px;
+        padding: 60px 0 0;
+      }
+
       .section-head {
         margin-bottom: 30px;
       }
 
       .product-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 34px 12px;
+        gap: 20px 10px;
+      }
+
+      .product-info {
+        padding: 12px 0 24px;
+      }
+
+      .more-center {
+        padding-top: 30px;
       }
 
       .split-banners {
         grid-template-columns: 1fr;
-        padding: 0 14px;
+        gap: 10px;
+        padding: 60px 16px 0;
+      }
+
+      .carousel {
+        margin: 0 -16px;
+        padding: 0 10px 50px;
       }
 
       .carousel-track {
         grid-auto-columns: minmax(210px, 72vw);
+        gap: 10px;
       }
 
       .reviews,
