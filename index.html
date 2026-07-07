@@ -504,7 +504,8 @@
     .product-media img {
       height: 100%;
       object-fit: cover;
-      transition: transform .6s ease, opacity .35s ease;
+      transform: none;
+      transition: none;
     }
 
     .product-media .after {
@@ -514,7 +515,7 @@
     }
 
     .product-card:hover .product-media .before {
-      transform: scale(1.03);
+      opacity: 0;
     }
 
     .product-card:hover .product-media .after {
@@ -526,7 +527,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      display: flex;
+      display: none;
       justify-content: space-between;
       min-height: 30px;
       padding: 8px 12px;
@@ -783,11 +784,18 @@
     }
 
     .instagram img {
-      transition: transform .65s ease;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1);
+      transform-origin: center;
+      transition: transform .55s ease;
+      will-change: transform;
     }
 
-    .instagram:hover img {
-      transform: scale(1.045);
+    .instagram:hover img,
+    .instagram:focus-visible img {
+      transform: scale(1.08);
     }
 
     .footer {
@@ -1067,39 +1075,36 @@
       </div>
       <div class="product-grid">
         <article class="product-card">
-          <a class="product-media" href="#"><img class="before" src="./assets/home/product01.jpg" alt="Sub Frill Bustier"><img class="after" src="./assets/home/product02.jpg" alt="Sub Frill Bustier detail"></a>
-          <div class="product-info"><strong class="product-name">Sub Frill Bustier</strong><span>34,000 KRW</span></div>
+          <a class="product-media" href="#"><img class="before" src="./assets/home/best01-a.jpg" alt="Layered Sleeveless Set"><img class="after" src="./assets/home/best01-b.jpg" alt="Layered Sleeveless Set detail"></a>
+          <div class="product-info"><strong class="product-name">Layered Sleeveless Set</strong><span>34,000 KRW</span></div>
         </article>
         <article class="product-card">
-          <a class="product-media" href="#"><img class="before" src="./assets/home/product02.jpg" alt="Summer Layered Top"><img class="after" src="./assets/home/product03.jpg" alt="Summer Layered Top detail"></a>
-          <div class="product-info"><strong class="product-name">Summer Layered Top</strong><span>29,000 KRW</span></div>
+          <a class="product-media" href="#"><img class="before" src="./assets/home/best02-a.jpg" alt="Blue Summer Cardigan"><img class="after" src="./assets/home/best02-b.jpg" alt="Blue Summer Cardigan detail"></a>
+          <div class="product-info"><strong class="product-name">Blue Summer Cardigan</strong><span>29,000 KRW</span></div>
         </article>
         <article class="product-card">
-          <a class="product-media" href="#"><img class="before" src="./assets/home/product03.jpg" alt="Romantic Frill Sleeveless"><img class="after" src="./assets/home/product04.jpg" alt="Romantic Frill Sleeveless detail"></a>
-          <span class="badge"><span>SALE</span><span>13일 09:58:51</span></span>
-          <div class="product-info"><strong class="product-name">Romantic Frill Sleeveless</strong><div class="price-row"><span class="price-old">38,000 KRW</span><span>33,400 KRW</span><span class="price-sale">12%</span></div></div>
+          <a class="product-media" href="#"><img class="before" src="./assets/home/best03-a.jpg" alt="Summer Bolero Set"><img class="after" src="./assets/home/best03-b.jpg" alt="Summer Bolero Set detail"></a>
+          <div class="product-info"><strong class="product-name">Summer Bolero Set</strong><div class="price-row"><span class="price-old">38,000 KRW</span><span>33,400 KRW</span><span class="price-sale">12%</span></div></div>
         </article>
         <article class="product-card">
-          <a class="product-media" href="#"><img class="before" src="./assets/home/product04.jpg" alt="Soft Lace Camisole"><img class="after" src="./assets/home/product05.jpg" alt="Soft Lace Camisole detail"></a>
-          <span class="badge"><span>SALE</span><span>13일 09:58:51</span></span>
-          <div class="product-info"><strong class="product-name">Soft Lace Camisole</strong><div class="price-row"><span class="price-old">31,000 KRW</span><span>27,200 KRW</span><span class="price-sale">12%</span></div></div>
+          <a class="product-media" href="#"><img class="before" src="./assets/home/best04-a.jpg" alt="Soft Sleeveless Dress"><img class="after" src="./assets/home/best04-b.jpg" alt="Soft Sleeveless Dress detail"></a>
+          <div class="product-info"><strong class="product-name">Soft Sleeveless Dress</strong><div class="price-row"><span class="price-old">31,000 KRW</span><span>27,200 KRW</span><span class="price-sale">12%</span></div></div>
         </article>
         <article class="product-card">
-          <a class="product-media" href="#"><img class="before" src="./assets/home/product05.jpg" alt="Creamy Date Blouse"><img class="after" src="./assets/home/product06.jpg" alt="Creamy Date Blouse detail"></a>
-          <div class="product-info"><strong class="product-name">Creamy Date Blouse</strong><span>42,000 KRW</span></div>
+          <a class="product-media" href="#"><img class="before" src="./assets/home/arrival01-a.jpg" alt="Soft Pink Tee"><img class="after" src="./assets/home/arrival01-b.jpg" alt="Soft Pink Tee detail"></a>
+          <div class="product-info"><strong class="product-name">Soft Pink Tee</strong><span>42,000 KRW</span></div>
         </article>
         <article class="product-card">
-          <a class="product-media" href="#"><img class="before" src="./assets/home/product06.jpg" alt="See-through Loose Top"><img class="after" src="./assets/home/product07.jpg" alt="See-through Loose Top detail"></a>
-          <div class="product-info"><strong class="product-name">See-through Loose Top</strong><span>36,000 KRW</span></div>
+          <a class="product-media" href="#"><img class="before" src="./assets/home/arrival02-a.jpg" alt="Check Skirt Bag Set"><img class="after" src="./assets/home/arrival02-b.jpg" alt="Check Skirt Bag Set detail"></a>
+          <div class="product-info"><strong class="product-name">Check Skirt Bag Set</strong><span>36,000 KRW</span></div>
         </article>
         <article class="product-card">
-          <a class="product-media" href="#"><img class="before" src="./assets/home/product07.jpg" alt="Ribbon Summer Sleeveless"><img class="after" src="./assets/home/product08.jpg" alt="Ribbon Summer Sleeveless detail"></a>
-          <span class="badge"><span>SALE</span><span>1395일 06:27:17</span></span>
-          <div class="product-info"><strong class="product-name">Ribbon Summer Sleeveless</strong><div class="price-row"><span class="price-old">40,000 KRW</span><span>35,200 KRW</span><span class="price-sale">12%</span></div></div>
+          <a class="product-media" href="#"><img class="before" src="./assets/home/arrival03-a.jpg" alt="Ivory Frill Blouse"><img class="after" src="./assets/home/arrival03-b.jpg" alt="Ivory Frill Blouse detail"></a>
+          <div class="product-info"><strong class="product-name">Ivory Frill Blouse</strong><div class="price-row"><span class="price-old">40,000 KRW</span><span>35,200 KRW</span><span class="price-sale">12%</span></div></div>
         </article>
         <article class="product-card">
-          <a class="product-media" href="#"><img class="before" src="./assets/home/product08.jpg" alt="Soft Summer Knit Top"><img class="after" src="./assets/home/product09.jpg" alt="Soft Summer Knit Top detail"></a>
-          <div class="product-info"><strong class="product-name">Soft Summer Knit Top</strong><span>39,000 KRW</span></div>
+          <a class="product-media" href="#"><img class="before" src="./assets/home/arrival04-a.jpg" alt="Check Shirt Summer Look"><img class="after" src="./assets/home/arrival04-b.jpg" alt="Check Shirt Summer Look detail"></a>
+          <div class="product-info"><strong class="product-name">Check Shirt Summer Look</strong><span>39,000 KRW</span></div>
         </article>
       </div>
       <div class="more-center"><a class="more-link" href="#">MORE +</a></div>
@@ -1134,7 +1139,6 @@
           </article>
           <article class="product-card">
             <a class="product-media" href="#"><img class="before" src="./assets/home/arrival03-a.jpg" alt="Ivory Frill Blouse"><img class="after" src="./assets/home/arrival03-b.jpg" alt="Ivory Frill Blouse detail"></a>
-            <span class="badge"><span>SALE</span><span>13일 09:58:51</span></span>
             <div class="product-info"><strong class="product-name">Ivory Frill Blouse</strong><div class="price-row"><span class="price-old">45,000 KRW</span><span>39,600 KRW</span><span class="price-sale">12%</span></div></div>
           </article>
           <article class="product-card">
@@ -1152,9 +1156,7 @@
     <div class="divider"><span></span></div>
 
     <section class="video-banner" aria-label="Style For You">
-      <div class="video-frame">
-        <iframe src="https://www.youtube.com/embed/qlKtoql62fc?rel=0&modestbranding=1" title="Style For You" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-      </div>
+      <div style="padding: 0 0 71.29629629629629% 0; position: relative;"><iframe id="charlla-wb9v1hcd7en" src="https://player.charlla.io/wb9v1hcd7en" style="border:none;width:100% !important;height:100% !important;position:absolute;top:0;left:0;" allow="autoplay; fullscreen" loading="lazy"></iframe></div>
     </section>
 
     <section class="section" id="review">
